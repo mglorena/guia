@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 16px;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+input[type=text]
+{
+    border:solid 1px #0774FD;
+}
+input[type=submit]
+{
+    border:solid 1px #0774FD;
+}
+table {
+
+}
+.titleFil{
+    font-size: 16px;
+    font-weight: bold;
+    padding:10px;
+}
+.titlePag {
+    font-size: 24px;
+    color: #0070FD;
+}
+
+.titleSubPag {
+    font-size: 18px;
+    color: #AAAAAA;
+    font-weight: bold;
+}
+.textFooter
+{
+    color: #45535B;
+    text-align:center;
+}
+tr.listtitle td {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-ident:5px;
+    text-align:center;
+    padding:3px;
+}
+
+tr.listtitle th {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.tableList {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.tableList {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    width:100%;
+}
+
+td.listtitle {
+    font-weight: normal;
+    text-transform: uppercase;
+ 
+}
+
+tr.listselected td {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding: 3px;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+tr.listitemeven td {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding: 3px;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @charset "utf-8";
+}
+
+tr.listitemeven td.borderright {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    font-weight: normal;
+   }
+
+tr.listitemuneven td {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding: 3px;
+    font-weight: normal;
+   
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @charset "utf-8";
+}
+
+tr.listitemuneven td.borderright {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    font-weight: normal;
+   
+}
+
+.tableList {
+    border-color: #EDEDED;
+}
+
+.tableList {
+    border-bottom-color: #EDEDED;
+    border-left-color: #EDEDED;
+}
+
+tr.listtitle td {
+    background-color: #fff;
+    color: #AAAAAA;
+}
+
+tr.listtitle th {
+    background-color: #fff;
+    color: #AAAAAA;
+}
+
+td.listtitle {
+    background-color: #fff;
+    color: #AAAAAA;
+}
+
+tr.listitemhighlighted td {
+    border-bottom-color: #EDEDED;
+    background-color: #EDF9FF;
+    color: #45535b;
+}
+
+tr.underline td {
+    border-bottom-color: #808080;
+}
+
+tr.listselected td {
+    border-bottom-color: #EDEDED;
+    border-right-color: #EDEDED;
+    background-color: #C8C8C8;
+    color: #45535b;
+}
+
+tr.listselected td.borderright {
+    border-bottom-color: #EDEDED;
+    border-right-color: #EDEDED;
+    background-color: #C8C8C8;
+    color: #45535b;
+}
+
+tr.listitemeven td {
+    border-bottom-color: #EDEDED;
+    border-right-color: #EDEDED;
+    background-color: #F6F6F8;
+    color: #45535b;
+}
+
+tr.listitemuneven td {
+    border-bottom-color: #EDEDED;
+    border-right-color: #EDEDED;
+    background-color: #FFFFFF;
+    color: #45535b;
+}
+
+tr.listitemeven td.borderright {
+    border-bottom-color: #EDEDED;
+    border-right-color: #EDEDED;
+    background-color: #000000;
+    color: #45535b;
+}
+
+tr.listitemuneven td.borderright {
+    border-bottom-color: #EDEDED;
+    border-right-color: #EDEDED;
+    background-color: #FFFFFF;
+    color: #45535b;
+}
+.litle-msg
+{
+    font-size:12px;
+    color:#AAA;
+    
+}

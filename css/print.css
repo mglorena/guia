@@ -1,0 +1,168 @@
+/********* tablas ***********/
+
+.dlink{
+
+        display:none;
+    }
+    .titleFil{
+    font-size: 16px;
+    font-weight: bold;
+    padding:10px;
+}
+    #tblActions
+    {
+        display:none;
+
+    }
+    #tdAcc, #tdAcc1
+    {
+        display:none;
+
+    }
+
+    tr.listtitle td {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: Arial, Verdana, helvetica;
+        font-size: 10px;
+        text-align: center;
+        text-ident:5px;
+        border: 1px solid black;
+        padding:5px;
+    }
+
+    tr.listtitle th {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: Arial, Verdana, helvetica;
+        font-size: 10px;
+        text-align: left;
+         padding:5px;
+    }
+
+
+
+    .tableList {
+        border: 1px solid black;
+        width:100%;
+        /*border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-style: solid;
+        border-left-width: 1px;*/
+    }
+
+    td.listtitle {
+        font-weight: normal;
+        text-transform: uppercase;
+        font-family: Arial, Verdana, helvetica;
+        font-size: 10px;
+        border:1px solid black;
+        color: #000;
+    }
+
+    tr.listselected td {
+        /*border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-right-style: solid;
+        border-right-width: 1px;*/
+
+        padding: 3px;
+        font-weight: normal;
+        font-family: Arial, Verdana, helvetica;
+        font-size: 10px;
+        color: #000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    tr.listitemeven td {
+        /*border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-right-style: solid;
+        border-right-width: 1px;*/
+        border: 1px solid black;
+        padding: 3px;
+        font-weight: normal;
+        font-family: Arial, Verdana, helvetica;
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        @charset "utf-8";
+    }
+
+    tr.listitemeven td.borderright {
+        /*border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-right-style: solid;
+        border-right-width: 1px;*/
+        font-weight: normal;
+        font-family: Arial, Verdana, helvetica;
+        font-size: 10px;
+    }
+
+    tr.listitemuneven td {
+        /*border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-right-style: solid;
+        border-right-width: 1px;*/
+        padding: 3px;
+        font-weight: normal;
+        font-family: Arial, Verdana, helvetica;
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid black;
+        @charset "utf-8";
+
+    }
+
+    tr.listitemuneven td.borderright {
+        /*border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-right-style: solid;
+        border-right-width: 1px;*/
+        font-weight: normal;
+        font-family: Arial, Verdana, helvetica;
+        font-size: 10px;
+    }
+
+
+
+    tr.listitemeven td {
+        /*border-bottom-color: #000;
+        border-right-color: #000;*/
+        background-color: #F6F6F8;
+        color: #000;
+    }
+
+    tr.listitemuneven td {
+        /*border-bottom-color: #000;
+        border-right-color: #000;*/
+        background-color: #FFFFFF;
+        color: #000;
+    }
+
+    tr.listitemeven td.borderright {
+        /*border-bottom-color: #000;
+        border-right-color: #000;*/
+        background-color: #000000;
+        color: #000;
+    }
+
+    tr.listitemuneven td.borderright {
+        /*border-bottom-color: #000;
+        border-right-color: #000;*/
+        background-color: #FFFFFF;
+        color: #000;
+    }
+    .noWrap
+    {
+        text-wrap: none;
+    }
+@media print {
+    /* Todas las reglas Css */
+@page {
+    size: A4 portrait; 
+}
+    
+}
