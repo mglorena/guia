@@ -79,26 +79,42 @@ function Search($inputText, $text) {
     return $html;
 }
 
-#function DropDownDepto() {
+function DropDownDepto() {
 
 
+   
+    $result = DptoGetAll();
 
-#    $query = "SELECT departamentos.id_depto, NombreCompleto FROM departamentos INNER JOIN internos ON internos.deptoId = departamentos.id_depto WHERE interno NOT LIKE '7%' AND NombreCompleto <> '' AND NombreCompleto <> 'Por Defecto' group by NombreCompleto Order by NombreCompleto;";
-#    $conexion = mysqli_connect(Conf::HOSTNAME, Conf::DB_USER, Conf::DB_PASS,Conf::DB_NAME) or die("error: " . Conf::HOSTNAME . "," . Conf::DB_USER . "," . Conf::DB_PASS . " - " . mysqli_connect_error());
-#    mysqli_query("SET NAMES 'utf8'; ", $conexion);
-#    $result = $conexion->query($query);
-#
-#
-#    $select = "<select id=\"ddlDepto\" name=\"ddlDepto\" onchange=\"SearchBy(this)\">";
-#    $select.= "<option value='-1' ></option>";
-#    $select.= "<option value='0' >Todos</option>";
-#
-#    while ($d = $result->fetch_row()) {
-#        $select.= "<option value='" . $d[0] . "' >" . $d[1] . "</option>";
-#    }
-#    $select.="</select>";
-#    return $select;
+    $select = "<select id=\"ddlDepto\" name=\"ddlDepto\" onchange=\"SearchBy(this)\">";
+    $select.= "<option value='-1' ></option>";
+    $select.= "<option value='0' >Todos</option>";
+    
+    foreach ($result as $d) {
+        $select.= "<option value='" . $d['deptoId'] . "' >" . $d['NombreCompleto'] . "</option>";
+    }
+    $select.="</select>";
+    return $select;
 
-#}
+}
+
+function DptoGetAll() {
+    $dptos = array();
+    $query = "";
+    try {
+        $db = new sqlprovider();
+        $db->getInstance();
+        $query = "call guia_dptoGetAll();";
+        if ($db->setQuery($query))
+        {
+            $dptos = $db->ListArray();
+
+        }
+        $db->CloseMysql();
+        return $dptos;
+    } catch (Exception $ex) {
+        echo "hubo error de base de datos " . $ex->getMessage();
+    }
+    return null;
+}
 
 ?>

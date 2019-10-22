@@ -90,11 +90,11 @@ function SearchPHP()
                     <br/>
                     <div class="litle-msg">Búsqueda sobre número de interno, responsable, dependencia, departamento y personas usuarias de un interno.</div>
                     <div  class="textFooter" >
-<!--
-                        Filtrar por -->
+
+                        Filtrar por : 
                         <?php
-                        /*$result = DropDownDepto();
-                        echo $result;*/
+                        $result = DropDownDepto();
+                        echo $result;
                         ?>
                         <a href="#" onclick="PopinOptions(event);"><b>Opciones</b></a>
                         &nbsp;<a href="#" onclick="Imprimir();"><b>Imprimir Vista</b></a> &nbsp; 
