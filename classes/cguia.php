@@ -79,22 +79,26 @@ function Search($inputText, $text) {
     return $html;
 }
 
-function DropDownDepto() {
-    $query = "SELECT departamentos.id_depto, NombreCompleto FROM departamentos INNER JOIN internos ON internos.deptoId = departamentos.id_depto WHERE interno NOT LIKE '7%' AND NombreCompleto <> '' AND NombreCompleto <> 'Por Defecto' group by NombreCompleto Order by NombreCompleto;";
-    $conexion = mysql_connect(Conf::HOSTNAME, Conf::DB_USER, Conf::DB_PASS) or die("error: " . Conf::HOSTNAME . "," . Conf::DB_USER . "," . Conf::DB_PASS . " - " . mysql_error());
-    mysql_select_db(Conf::DB_NAME, $conexion) or die("error, " . Conf::DB_NAME . "," . Conf::DB_PASS . mysql_error());
-    mysql_query("SET NAMES 'utf8'; ", $conexion);
-    $result = mysql_query($query, $conexion);
+#function DropDownDepto() {
 
-    $select = "<select id=\"ddlDepto\" name=\"ddlDepto\" onchange=\"SearchBy(this)\">";
-    $select.= "<option value='-1' ></option>";
-    $select.= "<option value='0' >Todos</option>";
 
-    while ($d = mysql_fetch_row($result)) {
-        $select.= "<option value='" . $d[0] . "' >" . $d[1] . "</option>";
-    }
-    $select.="</select>";
-    return $select;
-}
+
+#    $query = "SELECT departamentos.id_depto, NombreCompleto FROM departamentos INNER JOIN internos ON internos.deptoId = departamentos.id_depto WHERE interno NOT LIKE '7%' AND NombreCompleto <> '' AND NombreCompleto <> 'Por Defecto' group by NombreCompleto Order by NombreCompleto;";
+#    $conexion = mysqli_connect(Conf::HOSTNAME, Conf::DB_USER, Conf::DB_PASS,Conf::DB_NAME) or die("error: " . Conf::HOSTNAME . "," . Conf::DB_USER . "," . Conf::DB_PASS . " - " . mysqli_connect_error());
+#    mysqli_query("SET NAMES 'utf8'; ", $conexion);
+#    $result = $conexion->query($query);
+#
+#
+#    $select = "<select id=\"ddlDepto\" name=\"ddlDepto\" onchange=\"SearchBy(this)\">";
+#    $select.= "<option value='-1' ></option>";
+#    $select.= "<option value='0' >Todos</option>";
+#
+#    while ($d = $result->fetch_row()) {
+#        $select.= "<option value='" . $d[0] . "' >" . $d[1] . "</option>";
+#    }
+#    $select.="</select>";
+#    return $select;
+
+#}
 
 ?>

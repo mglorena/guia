@@ -7,7 +7,31 @@
  */
 header('Content-Type: text/html; charset=UTF-8');
 header('Content-Disposition", "attachment;filename=myfilename.xls');
+header( 'X-Frame-Options: SAMEORIGIN' );
+
+
+
 require ("classes/cguia.php");
+
+function SearchPHP()
+{
+    $ix = strip_tags($_POST["inputText"]); 
+    $ix2 = strip_tags($_POST["hdnText"]); 
+    $btn = strip_tags($_POST["Search"]);
+
+    $inputText = (!isset($ix)?"": $ix);
+    $procesar = (!isset($btn)?"":$btn);
+    $textFil = (!isset($ix2)?"":$ix2);
+
+    if (isset($procesar)) {
+       
+	   $result = Search($inputText,$textFil);
+        echo $result;
+    }
+}
+
+
+
 ?>
 
 
@@ -20,10 +44,10 @@ require ("classes/cguia.php");
         <link href="css/popin.css" rel="stylesheet" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"/>
-        <script type="text/javascript" src="js/scripts.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/jquerycol.js"></script>
-        <script type="text/javascript" src="js/popin.js"></script>
+        <script type="text/javascript" src="scripts/scripts.js"></script>
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <script type="text/javascript" src="scripts/jquerycol.js"></script>
+        <script type="text/javascript" src="scripts/popin.js"></script>
         <script>
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -36,9 +60,9 @@ require ("classes/cguia.php");
                 a.src = g;
                 m.parentNode.insertBefore(a, m)
             })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
             ga('create', 'UA-40909718-1', 'unsa.edu.ar');
             ga('send', 'pageview');
+
 
         </script>
     </head>
@@ -66,11 +90,11 @@ require ("classes/cguia.php");
                     <br/>
                     <div class="litle-msg">Búsqueda sobre número de interno, responsable, dependencia, departamento y personas usuarias de un interno.</div>
                     <div  class="textFooter" >
-
-                        Filtrar por 
+<!--
+                        Filtrar por -->
                         <?php
-                        $result = DropDownDepto();
-                        echo $result;
+                        /*$result = DropDownDepto();
+                        echo $result;*/
                         ?>
                         <a href="#" onclick="PopinOptions(event);"><b>Opciones</b></a>
                         &nbsp;<a href="#" onclick="Imprimir();"><b>Imprimir Vista</b></a> &nbsp; 
@@ -80,14 +104,9 @@ require ("classes/cguia.php");
                     <div id="divResult" style="border:solid 0px #CCC;padding:10px;width:97%">
 
                         <?php
-                        $inputText = (!isset($_POST["inputText"])?"":$_POST["inputText"]);
-                        $procesar = (!isset($_POST["Search"])?"":$_POST["Search"]);
-                        $textFil = (!isset($_POST["hdnText"])?"":$_POST["hdnText"]);
                         
-                        if (isset($procesar)) {
-                            $result = Search($inputText, $textFil);
-                            echo $result;
-                        }
+						SearchPHP();
+                        
                         ?>
                     </div>
                     <input type="hidden" id="hdnText" name="hdnText" value="">
@@ -99,7 +118,7 @@ require ("classes/cguia.php");
             </div>
         </div>
 
-        <div class="textFooter">Para la corrección de información de la GUIA, por favor comuniquese con la Dirección General de Obras y Servicios <br/> Universidad Nacional de Salta - 2017  </div>
+        <div class="textFooter">Para la corrección de información de la GUIA, por favor comuniquese con la Dirección General de Obras y Servicios <br/> Universidad Nacional de Salta - 2018  </div>
         <br/>
         <div id="divOpciones" style="display:none;width:500px;height: 80px;">
             <div id="divBarraOpt"  style="padding:10px;">

@@ -7,11 +7,11 @@ class Conf {
     const HOST_MAIL = 'obras.unsa.edu.ar';
     const SMTP_PORT = 25;
     
-    const DB_USER ='guia';
+    const DB_USER ='root';
     const DB_NAME ='guia';
-    const DB_PASS ='obras$gu1@';
+    const DB_PASS ='oysadmin';
 
-    const DIR_HOME = '/var/www/guia';
+    const DIR_HOME = '/var/www/html/guia';
     const HOSTNAME = 'localhost';
     
 		
