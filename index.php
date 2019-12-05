@@ -118,7 +118,7 @@ function SearchPHP()
             </div>
         </div>
 
-        <div class="textFooter">Para la corrección de información de la GUIA, por favor comuniquese con la Dirección General de Obras y Servicios <br/> Universidad Nacional de Salta - 2018  </div>
+        <div class="textFooter">Para la corrección de información de la GUIA, por favor comuniquese con la Dirección General de Obras y Servicios <br/> Universidad Nacional de Salta - 2020  </div>
         <br/>
         <div id="divOpciones" style="display:none;width:500px;height: 80px;">
             <div id="divBarraOpt"  style="padding:10px;">
