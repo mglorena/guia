@@ -91,13 +91,13 @@ function SearchPHP()
                     <div class="litle-msg">Búsqueda sobre número de interno, responsable, dependencia, departamento y personas usuarias de un interno.</div>
                     <div  class="textFooter" >
 
-                        Filtrar por : 
+                        <!-- Filtrar por : -->
                         <?php
-                        $result = DropDownDepto();
-                        echo $result;
+                        //$result = DropDownDepto();
+                        //echo $result;
                         ?>
-                        <a href="#" onclick="PopinOptions(event);"><b>Opciones</b></a>
-                        &nbsp;<a href="#" onclick="Imprimir();"><b>Imprimir Vista</b></a> &nbsp; 
+                        <!--<a href="#" onclick="PopinOptions(event);"><b>Opciones</b></a>
+                        &nbsp;<a href="#" onclick="Imprimir();"><b>Imprimir Vista</b></a> &nbsp;--> 
                     </div>
 
 
@@ -118,7 +118,7 @@ function SearchPHP()
             </div>
         </div>
 
-        <div class="textFooter">Para la corrección de información de la GUIA, por favor comuniquese con la Dirección General de Obras y Servicios <br/> Universidad Nacional de Salta - 2020  </div>
+        <div class="textFooter"Para corrección de la información en la GUIA, por favor comuníquese con la Secretaría de Obras, Servicios y Mantenimiento <br/> Universidad Nacional de Salta - 2023  </div>
         <br/>
         <div id="divOpciones" style="display:none;width:500px;height: 80px;">
             <div id="divBarraOpt"  style="padding:10px;">
