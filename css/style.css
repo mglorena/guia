@@ -46,12 +46,16 @@ tr.listtitle td {
     text-ident:5px;
     text-align:center;
     padding:3px;
+background-color:#46A948;
+   color:#fff;
 }
 
 tr.listtitle th {
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
+background-color:#46A948;
+    color:#fff;
 }
 
 .tableList {
@@ -70,6 +74,7 @@ tr.listtitle th {
 td.listtitle {
     font-weight: normal;
     text-transform: uppercase;
+    color:#fff;
  
 }
 
@@ -136,18 +141,18 @@ tr.listitemuneven td.borderright {
 }
 
 tr.listtitle td {
-    background-color: #fff;
-    color: #AAAAAA;
+    background-color: #46A948
+    color: #fff;
 }
 
 tr.listtitle th {
-    background-color: #fff;
-    color: #AAAAAA;
+    background-color: #46A948
+    color: #FFF;
 }
 
 td.listtitle {
-    background-color: #fff;
-    color: #AAAAAA;
+    background-color: #46A948;
+    color: #FFF;
 }
 
 tr.listitemhighlighted td {
